@@ -1,5 +1,5 @@
-import MyContract from 0x01
+import function from 0x05
 
-pub fun main(_name : String): MyContract.Person {
-  return MyContract.getPerson(_name: _name)
+pub fun main(_id : String): function.Person {
+  return function.getId(_id: _id)
 }
