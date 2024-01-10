@@ -1,10 +1,10 @@
-import MyContract from 0x01
+import function from 0x05
 
-transaction (_name : String, _age: UInt32) {
+transaction (_id : String, _no: UInt32) {
 
   prepare(acct: AuthAccount) {}
 
   execute {
-    MyContract.addPerson(_name: _name, _age: _age)
+    function.addId(_id: _id, _no: _no)
   }
 }
