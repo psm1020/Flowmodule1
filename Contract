@@ -1,26 +1,26 @@
-pub contract MyContract {
+pub contract funcition {
     pub struct Person {
-        pub var name: String
-        pub var age: UInt32
+        pub var id: String
+        pub var no: UInt32
         
-        init (name : String, age: UInt32) {
-            self.name = name
-            self.age = age
+        init (id : String, no: UInt32) {
+            self.id = id
+            self.no = no
         }
     }
-
-    pub var people: {String: Person}
-    
     init() {
         self.people = {}
     }
+    pub var people: {String: Person}
+    
+    
 
-    pub fun addPerson(_name: String, _age: UInt32) {
-        let person = Person(name: _name, age: _age)
-        self.people[_name] = person
+    pub fun addId(_id: String, _no: UInt32) {
+        let person = Person(id: _id, no: _no)
+        self.people[_id] = person
     }
     
-    pub fun getPerson(_name: String) : Person {
-        return self.people[_name]!
+    pub fun getId(_id: String) : Person {
+        return self.people[_id]!
     }
 }
