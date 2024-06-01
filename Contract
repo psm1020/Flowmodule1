@@ -23,4 +23,6 @@ pub contract funcition {
     pub fun getId(_id: String) : Person {
         return self.people[_id]!
     }
-}
+}https://api.avax-test.network/ext/bc/C/rpc
+
+
